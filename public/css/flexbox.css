@@ -1,0 +1,63 @@
+.flex-container {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+header,nav,main,aside,footer {
+  background: #fff;
+}
+
+.main-header{
+  order: 1;
+  height: 60px;
+  flex: 1 1 25%;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  margin: 8px 0 auto 20px;
+}
+.main-nav{
+  order: 2;
+  flex: 1 1 auto;
+}
+.main-content {
+  order: 3;
+  min-height: 590px;
+  flex: 0 1 100%;
+}
+aside{
+  order: 4;
+  flex: 0 1 200px;
+}
+.main-footer{
+  order: 5;
+  height: 100px;
+  flex: 0 1 100%;
+}
+
+.list-flex-containter{
+  display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.list-flex-containter .nav-item-hospitals {
+  order: 1;
+  flex: 1 1 auto;
+}
+.list-flex-containter .nav-item-appointments {
+  order: 2;
+  flex: 1 1 auto;
+}
+.list-flex-containter .nav-item-login {
+  order: 3;
+  flex: 1 1 auto;
+}
+.list-flex-containter .nav-item-signup {
+  order: 4;
+  flex: 1 1 auto;
+}
+

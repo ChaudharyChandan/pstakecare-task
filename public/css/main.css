@@ -1,0 +1,46 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*CSS Flexbox*/
+
+.main-nav .nav-list {
+  list-style-type: none;
+}
+
+.main-nav .nav-list .nav-item{
+  display: inline-block;
+}
+
+.main-nav .nav-list .nav-item .nav-item-link {
+  text-decoration: none;
+  color: black;
+}
+
+.list-flex-containter .nav-item-link {
+  cursor: auto;
+}
+
+.main-header .logo .logo-link{
+  background: url('/photos/sprite.png') no-repeat;
+  display: block;
+  background-position: -12px -8px;
+  width: 138px;
+  height: 45px;
+}
+
+.main-content{
+  padding: 50px;
+  background: #b2cecf;
+}
+
+.list-item {
+  border: 1px solid #DCDCDC;
+  padding: 10px;
+  box-shadow: 1px;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="PSTakeCareApp">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=IE9">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>PSTakeCare | Mumbai, Maharastra</title>
+		<meta name="title" content="PSTakeCare | Mumbai, Maharastra">
+		<meta name="description" content="Discover the best for any medical treatment in Mumbai">
+		<meta name="keywords" content="hospital,medicine,doctor,disease,treatment,patient">
+		<link rel="stylesheet" type="text/css" href="/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/normalize-css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="/css/flexbox.css" />
+	</head>
+	<body>
+		<div class="flex-container">
+			<header class="main-header">
+				<section class="logo">
+					<a href="http://localhost:3000/#/" class="logo-link"></a>
+				</section>
+			</header>
+			<nav class="main-nav">
+				<ul class="nav-list list-flex-containter">
+					<li class="nav-item nav-item-hospitals">
+						<a href="http://localhost:3000/#hospitals" class="nav-item-link">Hospitals</a>
+					</li>
+					<!--<li class="nav-item nav-item-appointments">
+						<a href="http://localhost:3000/#appointments" class="nav-item-link">Appointments</a>
+					</li>-->
+					<li class="nav-item nav-item-login">
+						<a href="http://localhost:3000/#login" class="nav-item-link">Login</a>
+					</li>
+					<li class="nav-item nav-item-signup">
+						<a href="http://localhost:3000/#signup" class="nav-item-link">Sign Up</a>
+					</li>
+				</ul>
+			</nav>
+			<main class="main-content">
+				<ng-view></ng-view>
+			</main>
+			<!--<aside>Aside</aside>
+			<footer class="main-footer">Footer</footer>-->
+		</div>
+		
+		<script src="/jquery/dist/jquery.min.js"></script>
+		<script src="/angular/angular.min.js"></script>
+		<script src="/angular-route/angular-route.min.js"></script>
+		<script src="/angular-resource/angular-resource.min.js"></script>
+		<script src="/js/app.js"></script>
+		<script src="/js/services/hospitalService.js"></script>
+		<script src="/js/services/hospitalTimingService.js"></script>
+		<script src="/js/services/particularHospitalService.js"></script>
+		<script src="/js/controllers/homeController.js"></script>
+		<script src="/js/controllers/hospitalController.js"></script>
+		<script src="/js/controllers/hospitalDetailsController.js"></script>
+	</body>
+</html>

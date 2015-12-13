@@ -1,0 +1,9 @@
+<div ng-repeat="hospital in hospitals">
+	<section class="list-item">
+		<p>{{hospital.name}}</p>
+		<p>{{hospital.address}}</p>
+		<p>{{hospital.contact}}</p>
+		<p style="white-space: pre-line">{{hospital.standardTimingString}}</p>
+		<a ng-href="http://localhost:3000/#hospitals/{{hospital.routeName}}"><input type="button" class="btn btn-primary" value="Details" ng-click="setSelectedHospital(hospital)"></a>
+	</section>
+</div>
