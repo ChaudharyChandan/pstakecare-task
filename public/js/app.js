@@ -24,7 +24,7 @@ angular.module('PSTakeCareApp',['ngRoute','ngResource'])
             otherwise({
                 redirectTo: '/'
             });
-            //$locationProvider.html5Mode({ enabled: true});
+            $locationProvider.html5Mode({ enabled: true});
      }]);
     //  .run(function($http) {
     //     delete $http.defaults.headers.common["X-API-TOKEN"];
