@@ -1,5 +1,7 @@
-angular.module('PSTakeCareApp',['ngRoute','ngResource'])
-    .config(['$routeProvider', '$locationProvider', '$httpProvider', function($routeProvider, $locationProvider, $httpProvider) {
+var PSTakeCareApp = angular.module('PSTakeCareApp',['ngRoute','ngResource']);
+
+PSTakeCareApp.config(
+	['$routeProvider', '$locationProvider', '$httpProvider', function($routeProvider, $locationProvider, $httpProvider) {
         $routeProvider.
             when('/',{
                 templateUrl: 'partials/home-page.html',
@@ -25,7 +27,8 @@ angular.module('PSTakeCareApp',['ngRoute','ngResource'])
                 redirectTo: '/'
             });
             $locationProvider.html5Mode({ enabled: true});
-     }]);
+     }]
+	 );
     //  .run(function($http) {
     //     delete $http.defaults.headers.common["X-API-TOKEN"];
     //  });
